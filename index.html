@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item me-3">
+                                <a class="nav-link active text-white" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-white" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-white" href="#">About</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-white" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <span class="phone-number text-white">Phone Number: +91 7689345678</span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid second-sec">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="left-sec d-flex">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <img src="./resources/images/logo.png" alt="Logo" class="img-fluid">
+                    </a>
+                    <div class="d-flex align-items-center search">
+                        <div class="dropdown">
+                            <button class="browse btn btn-light dropdown-toggle" type="button" id="browseDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Browse
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="browseDropdown">
+                                <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                <li><a class="dropdown-item" href="#">Category 3</a></li>
+                            </ul>
+                        </div>
+                        <form class="d-flex">
+                            <span class="input-group-text border-0" id="search-addon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Search Course and Classes"
+                                aria-label="Search" aria-describedby="search-addon">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center notify">
+                    <button class="btn btn-light position-relative me-3" id="notificationIcon" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationIcon">
+                        <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                        <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                        <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                    </ul>
+
+                    <div class="dropdown">
+                        <button class="btn " type="button" id="profileDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./resources/images/profile.png" alt="Profile" class="rounded-circle" height="42">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center d-flex align-items-center" id="hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 left my-auto" data-aos="fade-up">
+                    <h1>Find More About <br>
+                        <span class="highlight">E-Learning Experience</span>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. Viverra lacinia sed praesent pharetra quisque consectetur
+                        tellus elit. Suspendisse ultrices vitae at platea. Euismod pretium sit est etiam.Lorem ipsum
+                        dolor sit amet consectetur. </p>
+                    <button class="btn btn-primary">View Course ➔</button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 right" data-aos="fade-left">
+                    <img src="./resources/images/woman-with-laptop.png" alt="Woman with laptop" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  best selling courses -->
+    <section class="best-selling-courses py-5">
+        <div class="container-fluid">
+            <h2 class="text-center">Best Selling Courses</h2>
+            <div class="row">
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2-4 mb-4">
+                    <div class="card course-card">
+                        <img src="./resources/images/course-Images.png" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="category-badge">DESIGN</span>
+                                <span class="price-badge">$57</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning A-Z™: Hands-On Python</h5>
+                            <p class="price">$57</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <span class="size">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  featured cources -->
+    <section class="featured-courses-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 heading">
+                    <h2>Our Featured Courses</h2>
+                </div>
+                <div class="col-md-6 cards">
+                    <p class="section-description">Vestibulum Sed Dolor Sed Diam Mollis Maximus Vel Nec Dolor. Donec
+                        Varius Purus Et Eleifend Porta.</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <img src="./resources/images/course-Images-2.png"
+                                alt="Investing In Stocks The Complete Course" class="course-image">
+                            <div class="course-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="course-category health">Health & Fitness</span>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="discounted-price">$14.00</span>
+                                        <span class="original-price">$26.00</span>
+                                    </div>
+                                </div>
+                                <h3 class="course-title">Investing In Stocks The Complete Course!</h3>
+                                <div class="course-details d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <img src="./resources/images/Photo.svg" alt="">
+                                        <span class="author">Kevin Gilbert</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                        <span class="author">(357,914)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="size"><img src="./resources/images/user.svg" alt=""> 265.7K</span>
+                                        <span class="student">students</span>
+                                    </div>
+                                    <span class="difficulty"><img src="./resources/images/bar-chart.svg" alt="">
+                                        Beginner</span>
+                                    <span class="duration"><img src="./resources/images/clock.svg" alt=""> 6
+                                        hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <img src="./resources/images/course-Images-2.png"
+                                alt="Investing In Stocks The Complete Course" class="course-image">
+                            <div class="course-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="course-category health">Health & Fitness</span>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="discounted-price">$14.00</span>
+                                        <span class="original-price">$26.00</span>
+                                    </div>
+                                </div>
+                                <h3 class="course-title">Investing In Stocks The Complete Course!</h3>
+                                <div class="course-details d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <img src="./resources/images/Photo.svg" alt="">
+                                        <span class="author">Kevin Gilbert</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                        <span class="author">(357,914)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="size"><img src="./resources/images/user.svg" alt=""> 265.7K</span>
+                                        <span class="student">students</span>
+                                    </div>
+                                    <span class="difficulty"><img src="./resources/images/bar-chart.svg" alt="">
+                                        Beginner</span>
+                                    <span class="duration"><img src="./resources/images/clock.svg" alt=""> 6
+                                        hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <img src="./resources/images/course-Images-2.png"
+                                alt="Investing In Stocks The Complete Course" class="course-image">
+                            <div class="course-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="course-category health">Health & Fitness</span>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="discounted-price">$14.00</span>
+                                        <span class="original-price">$26.00</span>
+                                    </div>
+                                </div>
+                                <h3 class="course-title">Investing In Stocks The Complete Course!</h3>
+                                <div class="course-details d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <img src="./resources/images/Photo.svg" alt="">
+                                        <span class="author">Kevin Gilbert</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                        <span class="author">(357,914)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="size"><img src="./resources/images/user.svg" alt=""> 265.7K</span>
+                                        <span class="student">students</span>
+                                    </div>
+                                    <span class="difficulty"><img src="./resources/images/bar-chart.svg" alt="">
+                                        Beginner</span>
+                                    <span class="duration"><img src="./resources/images/clock.svg" alt=""> 6
+                                        hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <img src="./resources/images/course-Images-2.png"
+                                alt="Investing In Stocks The Complete Course" class="course-image">
+                            <div class="course-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="course-category health">Health & Fitness</span>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="discounted-price">$14.00</span>
+                                        <span class="original-price">$26.00</span>
+                                    </div>
+                                </div>
+                                <h3 class="course-title">Investing In Stocks The Complete Course!</h3>
+                                <div class="course-details d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <img src="./resources/images/Photo.svg" alt="">
+                                        <span class="author">Kevin Gilbert</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="rate"><i class="fas fa-star"></i> 5.0</span>
+                                        <span class="author">(357,914)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <div class="d-flex justify-content-between align-items-center gap-1">
+                                        <span class="size"><img src="./resources/images/user.svg" alt=""> 265.7K</span>
+                                        <span class="student">students</span>
+                                    </div>
+                                    <span class="difficulty"><img src="./resources/images/bar-chart.svg" alt="">
+                                        Beginner</span>
+                                    <span class="duration"><img src="./resources/images/clock.svg" alt=""> 6
+                                        hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center pb-5">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="./resources/images/logo.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="col-md-4 text-center">
+                    <nav>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><a href="#">Home</a></li>
+                            <li class="list-inline-item"><a href="#">Course</a></li>
+                            <li class="list-inline-item"><a href="#">About Us</a></li>
+                            <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p class="mb-0">© 2024 - LMS. All rights reserved</p>
+                </div>
+                <div class="col-md-6 links">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">FAQs</a></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+</body>
+
+</html>
