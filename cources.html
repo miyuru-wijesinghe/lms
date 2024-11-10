@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+          <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <div class="d-flex align-items-center">
+                <ul class="navbar-nav flex-row">
+                  <li class="nav-item me-3">
+                    <a class="nav-link active text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-white" href="#">Courses</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-white" href="#">About</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <span class="phone-number text-white">Phone Number: +91 7689345678</span>
+            </div>
+          </div>
+        </nav>
+      
+        <div class="second-sec">
+          <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="left-sec d-flex">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="./resources/images/logo.png" alt="Logo" class="img-fluid">
+              </a>
+              <div class="d-flex align-items-center search">
+                <div class="dropdown">
+                  <button class="browse btn btn-light dropdown-toggle" type="button" id="browseDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Browse
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="browseDropdown">
+                    <li><a class="dropdown-item" href="#">Category 1</a></li>
+                    <li><a class="dropdown-item" href="#">Category 2</a></li>
+                    <li><a class="dropdown-item" href="#">Category 3</a></li>
+                  </ul>
+                </div>
+                <form class="d-flex">
+                  <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Search Course and Classes" aria-label="Search" aria-describedby="search-addon">
+                </form>
+              </div>
+            </div>
+      
+            <div class="d-flex align-items-center notify">
+              <button class="btn btn-light position-relative me-3" id="notificationIcon" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-dot"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationIcon">
+                <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                <li><a class="dropdown-item" href="#">Notification 3</a></li>
+              </ul>
+      
+              <div class="dropdown">
+                <button class="btn" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./resources/images/profile.png" alt="Profile" class="rounded-circle" height="42">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                  <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!--  -->
+
+    <div class="filter container-fluid">
+        <!-- Search and Filter Section -->
+        <div class="d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex">
+                <button class="btn btn-outline-primary d-flex align-items-center filter-btn">
+                    <i class="fa-solid fa-arrow-down-wide-short"></i> Filter <span class="badge ms-2">3</span>
+                </button>
+                <form class="d-flex w-50">
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    <input type="text" class="form-control me-2" placeholder="UI/UX Design">
+                </form>
+            </div>
+            <div class="d-flex align-items-center sort">
+                <span class="me-2">Sort by:</span>
+                <select class="form-select">
+                    <option value="all">All</option>
+                    <!-- Add other sorting options here -->
+                </select>
+            </div>
+        </div>
+    
+        <!-- Suggestions -->
+        <div class="suggest mb-3 d-flex justify-content-between">
+            <div>
+                <span>Suggestion:</span>
+            <a href="#" class="text-primary text-decoration-none mx-1">user interface</a>
+            <a href="#" class="text-primary text-decoration-none mx-1">user experience</a>
+            <a href="#" class="text-primary text-decoration-none mx-1">web design</a>
+            <a href="#" class="text-primary text-decoration-none mx-1">interface</a>
+            <a href="#" class="text-primary text-decoration-none mx-1">app</a>
+            </div>
+            <p><span>3,145,684</span> results found for "ui/ux design"</p>
+        </div>
+    
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-5 col-lg-3">
+                <div class="filter-sidebar bg-light">
+                    <div class="accordion head">
+                        <!-- Main Category Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    FILTER CATEGORY
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <!-- Nested Accordion for Subcategories -->
+                                    <div class="accordion" id="subAccordionOne">
+                        
+                                        <!-- Sub-category - Development -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingDevelopment">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseDevelopment" aria-expanded="false" aria-controls="subCollapseDevelopment">
+                                                    <i class="fa fa-microchip me-2"></i>
+                                                    Development
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseDevelopment" class="accordion-collapse collapse" aria-labelledby="subHeadingDevelopment" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Web Development <span>574</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Data Science <span>568</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Mobile Development <span>1345</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Software Testing <span>317</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Software Engineering <span>31</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Software Development Tools <span>558</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> No-Code Development <span>37</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Business -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingBusiness">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseBusiness" aria-expanded="false" aria-controls="subCollapseBusiness">
+                                                    <i class="fa fa-handshake me-2"></i>
+                                                    Business
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseBusiness" class="accordion-collapse collapse" aria-labelledby="subHeadingBusiness" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Entrepreneurship <span>205</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Business Analytics <span>430</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Strategy <span>300</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Project Management <span>567</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Business Law <span>124</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Finance & Accounting -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingFinance">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseFinance" aria-expanded="false" aria-controls="subCollapseFinance">
+                                                    <i class="fa fa-file-invoice-dollar me-2"></i>
+                                                    Finance & Accounting
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseFinance" class="accordion-collapse collapse" aria-labelledby="subHeadingFinance" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Accounting <span>780</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Cryptocurrency & Blockchain <span>445</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Investment & Trading <span>1220</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Personal Finance <span>890</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - IT & Software -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingIT">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseIT" aria-expanded="false" aria-controls="subCollapseIT">
+                                                    <i class="fa fa-laptop-code me-2"></i>
+                                                    IT & Software
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseIT" class="accordion-collapse collapse" aria-labelledby="subHeadingIT" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> IT Certification <span>456</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Network & Security <span>789</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Hardware <span>210</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Office Productivity -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingOffice">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOffice" aria-expanded="false" aria-controls="subCollapseOffice">
+                                                    <i class="fa fa-clock me-2"></i>
+                                                    Office Productivity
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseOffice" class="accordion-collapse collapse" aria-labelledby="subHeadingOffice" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Microsoft Office <span>634</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Google Workspace <span>289</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> SAP <span>159</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Personal Development -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingPersonalDev">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapsePersonalDev" aria-expanded="false" aria-controls="subCollapsePersonalDev">
+                                                    <i class="fa fa-user-graduate me-2"></i>
+                                                    Personal Development
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapsePersonalDev" class="accordion-collapse collapse" aria-labelledby="subHeadingPersonalDev" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Leadership <span>300</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Career Development <span>475</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Communication Skills <span>610</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Design -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingDesign">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseDesign" aria-expanded="false" aria-controls="subCollapseDesign">
+                                                    <i class="fa fa-pencil-ruler me-2"></i>
+                                                    Design
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseDesign" class="accordion-collapse collapse" aria-labelledby="subHeadingDesign" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Graphic Design <span>650</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> UX/UI Design <span>480</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Interior Design <span>320</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Marketing -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingMarketing">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseMarketing" aria-expanded="false" aria-controls="subCollapseMarketing">
+                                                    <i class="fa fa-bullhorn me-2"></i>
+                                                    Marketing
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseMarketing" class="accordion-collapse collapse" aria-labelledby="subHeadingMarketing" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Digital Marketing <span>1024</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Content Marketing <span>562</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Affiliate Marketing <span>124</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Lifestyle -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingLifestyle">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseLifestyle" aria-expanded="false" aria-controls="subCollapseLifestyle">
+                                                    <i class="fa fa-cube me-2"></i>
+                                                    Lifestyle
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseLifestyle" class="accordion-collapse collapse" aria-labelledby="subHeadingLifestyle" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Arts & Crafts <span>210</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Travel <span>478</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Gaming <span>320</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Photography & Video -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingPhotoVideo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapsePhotoVideo" aria-expanded="false" aria-controls="subCollapsePhotoVideo">
+                                                    <i class="fa fa-camera me-2"></i>
+                                                    Photography & Video
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapsePhotoVideo" class="accordion-collapse collapse" aria-labelledby="subHeadingPhotoVideo" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Photography <span>823</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Video Editing <span>645</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Filmmaking <span>432</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Music -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingMusic">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseMusic" aria-expanded="false" aria-controls="subCollapseMusic">
+                                                    <i class="fa fa-music me-2"></i>
+                                                    Music
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseMusic" class="accordion-collapse collapse" aria-labelledby="subHeadingMusic" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Music Theory <span>345</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Music Production <span>512</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Instrumental <span>293</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Sub-category - Health & Fitness -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="subHeadingHealth">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseHealth" aria-expanded="false" aria-controls="subCollapseHealth">
+                                                    <i class="fa fa-heartbeat me-2"></i>
+                                                    Health & Fitness
+                                                </button>
+                                            </h2>
+                                            <div id="subCollapseHealth" class="accordion-collapse collapse" aria-labelledby="subHeadingHealth" data-bs-parent="#subAccordionOne">
+                                                <div class="accordion-body">
+                                                    <ul class="list-unstyled">
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Fitness <span>890</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Nutrition <span>765</span></li>
+                                                        <li><input type="checkbox" class="form-check-input me-2"> Yoga <span>432</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingRating">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRating" aria-expanded="false" aria-controls="collapseRating">
+                                     Rating
+                                </button>
+                            </h2>
+                            <div id="collapseRating" class="accordion-collapse collapse" aria-labelledby="headingRating">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex align-items-center">
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="d-flex label-text">
+                                                <i class="fa fa-star me-2"></i> 5 Star
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="d-flex label-text">
+                                                <i class="fa fa-star me-2"></i> 4 Star & up
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="d-flex label-text">
+                                                <i class="fa fa-star me-2"></i> 3 Star & up
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="d-flex label-text">
+                                                <i class="fa fa-star me-2"></i> 2 Star & up
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="d-flex label-text">
+                                                <i class="fa fa-star me-2"></i> 1 Star & up
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="CourceLevel">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCource" aria-expanded="false" aria-controls="collapseCource">
+                                     Cource Level
+                                </button>
+                            </h2>
+                            <div id="collapseCource" class="accordion-collapse collapse" aria-labelledby="CourceLevel">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                All Level
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                Beginner
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                Intermediate
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                Expert
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPrice">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterPrice" aria-expanded="false" aria-controls="filterPrice">
+                                     Price
+                                </button>
+                            </h2>
+                            <div id="filterPrice" class="accordion-collapse collapse" aria-labelledby="headingPrice" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <div class="mb-2">
+                                        <!-- Range Slider -->
+                                        <input type="range" class="p-3 mt-3 form-range" min="0" max="1000" step="10">
+                                        <!-- Min and Max Inputs -->
+                                        <div class="p-3 d-flex justify-content-between">
+                                            <input type="number" class="form-control me-2" placeholder="$ min">
+                                            <input type="number" class="form-control" placeholder="$ max">
+                                        </div>
+                                        <!-- Checkbox Options -->
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <input type="checkbox" class="form-check-input me-2">
+                                                <label class="label-text">
+                                                    All Level
+                                                </label>
+                                                <span class="count ms-2">1345</span>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="form-check-input me-2">
+                                                <label class="label-text">
+                                                    Beginner
+                                                </label>
+                                                <span class="count ms-2">1345</span>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="form-check-input me-2">
+                                                <label class="label-text">
+                                                    Intermediate
+                                                </label>
+                                                <span class="count ms-2">1345</span>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" class="form-check-input me-2">
+                                                <label class="label-text">
+                                                    Expert
+                                                </label>
+                                                <span class="count ms-2">1345</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="Duraion">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDuration" aria-expanded="false" aria-controls="collapseDuration">
+                                     Duration
+                                </button>
+                            </h2>
+                            <div id="collapseDuration" class="accordion-collapse collapse" aria-labelledby="Duraion">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                6-12 Months
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                3-6 Months
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                1-3 Months
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                1-4 Weeks
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                1-7 Days
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="Languages">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLanguages" aria-expanded="false" aria-controls="collapseLanguages">
+                                     Languages
+                                </button>
+                            </h2>
+                            <div id="collapseLanguages" class="accordion-collapse collapse" aria-labelledby="Languages">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                Spanish
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                Bengali
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                English
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                German
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="form-check-input me-2">
+                                            <label class="label-text">
+                                                Arabic
+                                            </label>
+                                            <span class="count ms-2">1345</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <!-- Additional main categories with nested accordions can go here -->
+                        <!-- Example: Business, Design, etc. -->
+                        
+                    </div>
+                </div>
+            </aside>
+            
+    
+            <!-- Course Cards Section -->
+            <section class="col-md-7 col-lg-9 cource-cards">
+                
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4">
+                    <!-- Course Card -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-1.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.9</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$66</span> <span class="new">$49</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Complete Blender Creator: Learn 3D Modelling for Beginners</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 7 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>197,637</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-2.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.8</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$36</span> <span class="new">$32</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Adobe Premiere Pro CC – Advanced Training Course</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 6 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>236,568</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-3.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.3</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$26</span> <span class="new">$16</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Ultimate AWS Certified Solutions Architect Associate 2024</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 12 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>511,123</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-4.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.2</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$49</span> <span class="new">$33</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Learn Ethical Hacking From Scratch</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 7 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>451,444</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-5.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.3</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$16</span> <span class="new">$26</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Angular - The Complete Guide (2024 Edition)</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 6 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>197,637</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-6.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.7</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$46</span> <span class="new">$36</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">How to get Diamond in soloQ | League of Legends | Season 11</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 12 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>435,671</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-7.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.3</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$56</span> <span class="new">$49</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">SQL for NEWBS: Weekender Crash Course</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 7 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>451,444</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-8.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.7</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$46</span> <span class="new">$39</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">SEO 2021: Complete SEO Training + SEO for WordPress Websites</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 7 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>451,444</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-9.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.9</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$32</span> <span class="new">$27</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">[NEW] Ultimate AWS Certified Cloud Practitioner</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 7 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>451,444</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-10.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.2</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$49</span> <span class="new">$33</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Complete Adobe Lightroom Megacourse: Beginner to Expert</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 6 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>197,637</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-11.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.3</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$56</span> <span class="new">$49</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Digital Marketing Masterclass - 23 Courses in 1</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 12 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>435,671</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-12.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.3</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$56</span> <span class="new">$49</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">The Ultimate Drawing Course - Beginner to Advanced</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 6 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>197,637</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-13.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.8</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$36</span> <span class="new">$32</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Automate the Boring Stuff with Python Programming</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 12 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>435,671</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-14.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.8</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$36</span> <span class="new">$32</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Selenium WebDriver with Java -Basics to Advanced+Frameworks</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 6 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>197,637</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-15.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.2</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$49</span> <span class="new">$33</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">iPhone Photography | Take Professional Photos On Your iPhone</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 12 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>435,671</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-16.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.2</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$49</span> <span class="new">$33</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Machine Learning A-Z™: Hands-On Python & R In Data Science</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 6 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>197,637</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-17.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.3</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$56</span> <span class="new">$49</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">2021 Complete Python Bootcamp From Zero to Hero in Python</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 12 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>435,671</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <img src="./resources/images/cource-card-18.png" class="card-img-top" alt="Course Image">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <span class="rate"><i class="fas fa-star"></i> 4.8</span>
+                                    <p class="price">
+                                        <span class="old text-decoration-line-through">$36</span> <span class="new">$32</span>
+                                    </p>
+                                </div>
+                                <h6 class="card-title">Premiere Pro CC for Beginners: Video Editing in Premiere</h6>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-muted">
+                                <span class="lesson"><img src="./resources/images/book.svg" alt=""> 6 Lessons</span>
+                                <div class="student"><img src="./resources/images/user.svg" alt=""> <span>197,637</span> students</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more course cards here -->
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination custom-pagination">
+                            <li class="page-item">
+                                <a class="page-link prev-next" href="#" aria-label="Previous">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">01</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#">04</a></li>
+                            <li class="page-item"><a class="page-link" href="#">05</a></li>
+                            <li class="page-item">
+                                <a class="page-link prev-next" href="#" aria-label="Next">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row align-items-center pb-5">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="./resources/images/logo.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="col-md-4 text-center">
+                    <nav>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><a href="#">Home</a></li>
+                            <li class="list-inline-item"><a href="#">Course</a></li>
+                            <li class="list-inline-item"><a href="#">About Us</a></li>
+                            <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p class="mb-0">© 2024 - LMS. All rights reserved</p>
+                </div>
+                <div class="col-md-6 links">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">FAQs</a></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+</body>
+
+</html>
