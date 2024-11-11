@@ -1236,6 +1236,7 @@ li:has(input[type="checkbox"]:checked) {
 
 
 /* Pagination */
+
 .pagination .page-item.active .page-link {
     background-color: #4C75FA;
     border-color: #007bff;
@@ -1278,6 +1279,7 @@ li:has(input[type="checkbox"]:checked) {
 .cource-details .instructor-info {
     display: flex;
     flex-direction: column;
+    margin-left: 2.5rem;
 }
 
 .cource-details .instructor-name {
@@ -1289,6 +1291,7 @@ li:has(input[type="checkbox"]:checked) {
     font-size: 1rem;
     display: flex;
     align-items: center;
+    color: rgba(253, 142, 31, 1);
 }
 
 .cource-details .stars {
@@ -1742,10 +1745,9 @@ li:has(input[type="checkbox"]:checked) {
 
 
 .cource-details .instructor-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    background: var(--Gray-White, #FFF);
+    padding: 20px 10px;
 }
 
 .cource-details span.created {
@@ -1758,51 +1760,95 @@ li:has(input[type="checkbox"]:checked) {
     letter-spacing: -0.14px;
 }
 
-.cource-details .instructor-image {
-    width: 90px;
+.cource-details .details {
+    margin-left: 1rem;
+}
+
+.cource-details .details i {
+    color: rgba(76, 117, 250, 1);
+
 }
 
 .cource-details .instructor-name {
     color: var(--Gray-900, #1D2026);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-bottom: 0;
 }
 
-.cource-details .instructor-title {
-    color: #6c757d;
+.cource-details .instructor-title,
+.cource-details .instructor-bio {
+    color: var(--Gray-600, #6E7485);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
 }
 
 .cource-details .course-rating,
 .cource-details .students,
 .cource-details .courses {
-    color: #ff9f00;
-    font-weight: 500;
-    margin-right: 10px;
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
-.cource-details .instructor-bio {
-    color: #6c757d;
-    margin-top: 10px;
+.cource-details .course-rating span,
+.cource-details .students span,
+.cource-details .courses span {
+    color: var(--Gray-900, #1D2026);
+    font-weight: 500;
+    padding: 0 5px;
 }
 
 /* Course Rating Section */
+
 .cource-details .course-rating-section {
-    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cource-details .rating-score h2 {
-    font-size: 3rem;
-    color: #ff9f00;
+    color: var(--Gray-900, #1D2026);
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.96px;
 }
 
 .cource-details .rating-score p {
-    color: #6c757d;
+    color: var(--Gray-900, #1D2026);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+}
+
+.cource-details .course-rating-section i {
+    color: rgba(253, 142, 31, 1);
+}
+
+.cource-details .percent {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cource-details .rating-bar {
@@ -1811,28 +1857,51 @@ li:has(input[type="checkbox"]:checked) {
     margin-bottom: 10px;
 }
 
-.cource-details .rating-bar span {
-    width: 80px;
+.cource-details .rating-bar .rating {
+    color: var(--Gray-600, #6E7485);
+    text-align: right;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+    width: 34%;
+    justify-content: space-evenly;
+}
+
+.cource-details .course-rating-section .rate {
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    padding: 20px 0;
 }
 
 .cource-details .progress {
     flex: 1;
-    height: 8px;
-    margin: 0 10px;
-    background-color: #e9ecef;
-    border-radius: 5px;
+    height: 9px;
+    margin: 0 12px;
+    background-color: rgba(255, 242, 229, 1);
+    border-radius: 0;
+    max-width: 333px;
+}
+
+.cource-details span.percentage {
+    color: var(--Gray-900, #1D2026);
+    text-align: right;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
 }
 
 .cource-details .progress-bar {
-    background-color: #ff9f00;
+    background-color: rgba(253, 142, 31, 1);
 }
 
-/* Students Feedback Section */
 .cource-details .students-feedback {
-    background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cource-details .student-avatar {
@@ -1841,8 +1910,743 @@ li:has(input[type="checkbox"]:checked) {
 }
 
 .cource-details .feedback-text {
-    color: #6c757d;
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
 }
+
+.cource-details h3 span {
+    font-weight: 400;
+}
+
+.cource-details .students-feedback .feedback {
+    border-bottom: 1px solid #E9EAF0;
+}
+
+.cource-details .students-feedback .title {
+    margin-bottom: 1rem;
+}
+
+.cource-details .students-feedback h3 {
+    padding-bottom: 0;
+}
+
+.cource-details .students-feedback a {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    background: var(--Gray-White, #FFF);
+    display: flex;
+    width: 200px;
+    padding: 12px 16px 12px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    text-decoration: none;
+}
+
+.cource-details .students-feedback .comment {
+    padding-left: 1rem;
+}
+
+.cource-details .feedback .rating i {
+    font-size: 13px;
+    margin: 0 1px;
+}
+
+.cource-details .students-feedback .comment .time h5 {
+    color: var(--Gray-900, #1D2026);
+    text-align: right;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+    margin-right: .5rem;
+}
+
+.cource-details .load-button a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.128px;
+    text-transform: capitalize;
+    display: flex;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    max-width: 170px;
+    background: rgba(76, 117, 250, 0.79);
+}
+
+.cource-details.container .course-content {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.cource-details .load-button a i {
+    color: rgba(76, 117, 250, 1);
+}
+
+.cource-details .students-feedback .comment .time p {
+    color: var(--Gray-600, #6E7485);
+
+    /* Body Small/400 */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 0;
+}
+
+/* about us */
+
+section.hero-section h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+section.hero-section h5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    background: #4C75FA;
+    width: 143px;
+    height: 4px;
+}
+
+section.hero-section h5 {
+    color: #4C75FA;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: capitalize;
+    padding-left: 158px;
+}
+
+.hero-section.about {
+    background-color: #F5F6FF;
+    background-image: url(../images/about-left.png);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: bottom left;
+    padding-top: 3rem;
+    margin-bottom: 17rem;
+}
+
+.hero-section .box.wrapper {
+    position: absolute;
+    left: -6rem;
+    bottom: 24px;
+    width: 271px;
+    padding: 12px 24px;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 16px;
+    background: rgba(255, 253, 253, 0.60);
+    box-shadow: 0px 4.755px 9.511px 0px rgba(51, 48, 48, 0.25);
+    backdrop-filter: blur(5.000000476837158px);
+}
+
+.hero-section .box.wrapper h4 {
+    color: #333;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+}
+
+.hero-section .box.wrapper .title {
+    padding-left: 5px;
+}
+
+.hero-section .box.wrapper p {
+    color: #333;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.about-sec-1 .icons i {
+    padding: 9px 9.395px 8.221px 9.824px;
+    border-radius: 8px;
+    background: #FFF;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    font-size: 20px;
+    color: #4C75FA;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-sec-1 h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.about-sec-1 p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.about-sec-2 h2 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+
+.about-sec-2 h2 span {
+    color: #4C75FA;
+
+}
+
+.about-sec-2 h4 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.about-sec-2 p {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+/* Steps Section */
+.about-sec-2 .step-circle {
+    position: relative;
+    display: inline-block;
+}
+
+.about-sec-2 .step-number {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.about-sec-1 {
+    background: var(--LMS, #5166F9);
+    padding-top: 14rem;
+    padding-bottom: 2rem;
+}
+
+.about-sec-1 img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.about-sec-1 .play-button {
+    width: 72px;
+    height: 72px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 24px;
+    top: -13rem;
+}
+
+.about-sec-2 h5 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.about-sec-2 h5::before {
+    content: '';
+    position: absolute;
+    left: -18rem;
+    right: 0;
+    margin: auto;
+    top: 14px;
+    background: #4C75FA;
+    width: 94px;
+    height: 4px;
+}
+
+.about-sec-2 h5::after {
+    content: '';
+    position: absolute;
+    right: -18rem;
+    left: 0;
+    margin: auto;
+    top: 14px;
+    background: #4C75FA;
+    width: 94px;
+    height: 4px;
+}
+
+/* contact */
+
+.contact-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form .form-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.contact-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.contact-form .form-check-input {
+    accent-color: #007bff;
+}
+
+.contact-form .form-check-label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.instructor-profile.container-fluid {
+    padding: 35px 70px;
+}
+
+@media (min-width: 768px) {
+    aside.col-md-3 {
+        width: 22%;
+        margin-right: 28px;
+    }
+}
+
+.instructor-profile main {
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.instructor-profile main h2 {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.instructor-profile main h3 {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 24.481px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.642px;
+    text-align: left;
+}
+
+.instructor-profile main p {
+    color: #4E5566;
+    font-family: Inter;
+    font-size: 14.281px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.441px;
+    letter-spacing: -0.143px;
+    margin: 0;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.instructor-profile main .learn {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+
+.swiper-container {
+    width: calc(100% - 140px);
+    margin: 0 auto;
+}
+
+.instructor-profile .swiper-container {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructor-profile h3.title {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.instructor-profile .main {
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.instructor-profile .wrapper nav ol.breadcrumb li,
+.instructor-profile .wrapper nav ol.breadcrumb li a {
+    color: #161A1A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.instructor-profile .profile {
+    position: relative;
+    display: flex;
+    height: 246px;
+    border-radius: 15px;
+    background: #4C75FA;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.instructor-profile .profile a i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    margin: auto;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.14);
+    justify-content: center;
+    align-items: center;
+}
+
+.instructor-profile .contact p {
+    color: #161A1A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.instructor-profile .contact p strong {
+    color: #828282;
+    font-weight: 500 !important;
+}
+
+.instructor-profile nav a {
+    background: #F5F6FF;
+    color: rgba(130, 130, 130, 1);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.instructor-profile .profile h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.instructor-profile .profile p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.swiper-navigation {
+    position: relative;
+    bottom: 1rem;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-button-prev {
+    left: auto !important;
+    right: 9rem;
+}
+
+.swiper-button-next {
+    right: 6rem !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+}
+
+.swiper-button-next {
+    background-image: url('../images/right.png');
+}
+
+.swiper-button-prev {
+    background-image: url('../images/left.png');
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}
+
+.instructor-profile aside {
+    border-radius: 15px;
+    background: #FFF;
+    z-index: 2;
+}
+
+.instructor-profile .card {
+    border: none;
+    border-radius: 0;
+}
+
+.instructor-profile .card-body {
+    padding: 1rem;
+}
+
+.instructor-profile .card-body::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #E9EAF0;
+    bottom: 4.5rem;
+    left: 0;
+}
+
+.instructor-profile main .card p {
+    color: #6E7485;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.instructor-profile main .card h5 {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+    padding: 15px 0;
+}
+
+.instructor-profile .card-body {
+    padding: 1rem .75rem;
+    border: solid 1px #E9EAF0;
+}
+
+.instructor-profile main .card h4 {
+    color: #23BD33;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+    margin: 0;
+}
+
+.instructor-profile .btn-block {
+    display: block;
+    border-radius: 0;
+    color: #4C75FA;
+    border: 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.056px;
+    text-transform: capitalize;
+    background: #F5F6FF;
+}
+
+.instructor-profile .progress {
+    height: 6px;
+    border-radius: 3px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+}
+
+.swiper-slide {
+    margin: 0px 20px;
+    max-width: 312px;
+}
+
+.swiper-wrapper {
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .swiper-slide .card {
+        max-width: 100%;
+    }
+}
+
 
 
 /* Responsive */
@@ -2026,6 +2830,89 @@ li:has(input[type="checkbox"]:checked) {
     .accordion .accordion-item h2.accordion-header button {
         font-size: 14px;
     }
+
+    .cource-details aside {
+        margin-top: 2rem;
+        padding: 1rem !important;
+    }
+
+    aside li {
+        font-size: 12px !important;
+    }
+
+    aside ul li i {
+        margin-right: 0.2rem;
+        font-size: 16px;
+    }
+
+    .cource-details button.btn.btn-outline-secondary {
+        font-size: 12px;
+        padding: 0px 12px;
+    }
+
+    .cource-details aside .cart,
+    .cource-details aside .buy {
+        font-size: 14px;
+        line-height: 46px;
+    }
+
+    .cource-details .course-content ul li i {
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .cource-details .students-feedback a {
+        font-size: 14px;
+        height: 60px;
+        gap: 20px;
+    }
+
+    .cource-details .share a {
+        font-size: 11px;
+        margin-right: 2px;
+        padding: 10px;
+    }
+
+    .cource-details .share a i {
+        width: 14px;
+        height: 12px;
+        font-size: 14px;
+    }
+
+    .cource-details .details {
+        margin-left: .5rem;
+    }
+
+    .cource-details .rating-bar .rating {
+        width: 42%;
+    }
+
+    .cource-details .progress {
+        max-width: 186px;
+    }
+
+    .cource-details .instructor-image img {
+        width: 47px;
+        height: 47px;
+    }
+
+    .hero-section.about .container,
+    .hero-section.about .container-fluid {
+        padding: 0px 15px 0px 31px;
+    }
+
+    .hero-section .box.wrapper {
+        left: 3rem;
+    }
+
+    .hero-section.about {
+        padding-top: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .about-sec-1 .play-button {
+        top: -9rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2131,5 +3018,89 @@ li:has(input[type="checkbox"]:checked) {
 
     aside.col-md-5.col-lg-3 {
         padding-bottom: 1rem;
+    }
+
+    .cource-details .course-title {
+        font-size: 26px;
+    }
+
+    .d-flex.justify-content-between.px-2 {
+        flex-direction: column;
+    }
+
+    #curriculumAccordion .accordion-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #curriculumAccordion button {
+        font-size: 14px;
+    }
+
+    .cource-details .accordion-body ul li {
+        font-size: 13px;
+    }
+
+    .cource-content .d-flex.gap-5.header {
+        gap: 1rem !important;
+    }
+
+    .cource-details .accordion-header span {
+        font-size: 12px !important;
+    }
+
+    .cource-details .course-rating,
+    .cource-details .students,
+    .cource-details .courses {
+        font-size: 13px;
+    }
+
+    .cource-details .rating-bar .rating {
+        width: 58%;
+        font-size: 12px;
+    }
+
+    .d-flex.gap-5.header {
+        font-size: 14px;
+        gap: 0.5rem !important;
+    }
+
+    .cource-details span.percentage {
+        font-size: 12px;
+    }
+
+    .cource-details h3 {
+        color: var(--Gray-900, #1D2026);
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -0.24px;
+        padding-bottom: 1rem;
+    }
+
+    .about-sec-1 .play-button {
+        top: -4rem;
+    }
+
+    .about-sec-1 p {
+        font-size: 13px;
+    }
+
+    .about-sec-2 h2 {
+        font-size: 40px;
+    }
+
+    .about-sec-2 h5::before {
+        left: -14rem;
+    }
+
+    .about-sec-2 h5::after {
+        right: -14rem;
+    }
+
+    .hero-section .box.wrapper {
+        left: 1rem;
     }
 }
