@@ -533,7 +533,7 @@ header form input.form-control {
     align-items: center;
 }
 
-.course-price {
+.featured-courses-section .course-price {
     display: flex;
     align-items: baseline;
     margin-top: 1rem;
@@ -2567,7 +2567,7 @@ section.hero-section h5 {
     width: 100%;
     height: .5px;
     background-color: #E9EAF0;
-    bottom: 4.5rem;
+    bottom: 5.5rem;
     left: 0;
 }
 
@@ -2610,7 +2610,7 @@ section.hero-section h5 {
 .instructor-profile .btn-block {
     display: block;
     border-radius: 0;
-    color: #4C75FA;
+    color: #ffffff;
     border: 0;
     font-family: Inter;
     font-size: 14px;
@@ -2620,6 +2620,7 @@ section.hero-section h5 {
     letter-spacing: -0.056px;
     text-transform: capitalize;
     background: #F5F6FF;
+    margin-top: 5px;
 }
 
 .instructor-profile .btn-block:hover {
@@ -2821,6 +2822,583 @@ section.hero-section h5 {
     line-height: 29px;
 }
 
+section.instructors-section h3 {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+section.instructors-section label.form-label {
+    color: var(--Gray-600, #6E7485);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.instructor-profile h4,
+.change-password h4 {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.instructor-profile .form-label {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+}
+
+.instructor-profile input.form-control,
+select.form-select,
+textarea.form-control {
+    fill: #F5F6FF;
+    stroke-width: 1px;
+    background-color: #F5F6FF;
+    border: none;
+    color: #828282;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+    height: 45px;
+}
+
+.instructor-profile button.cancel {
+    border: 1px solid #4C75FA;
+    border-radius: 100px;
+    padding: 15px 0;
+    width: 205px;
+    filter: drop-shadow(0px 8px 40px rgba(0, 0, 0, 0.05));
+    color: #4C75FA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.106px;
+    text-transform: capitalize;
+}
+
+.instructor-profile button.submit {
+    border: 1px solid #4C75FA;
+    border-radius: 100px;
+    padding: 15px 0;
+    width: 205px;
+    filter: drop-shadow(0px 8px 40px rgba(0, 0, 0, 0.05));
+    background-color: #4C75FA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.106px;
+    text-transform: capitalize;
+}
+
+.instructor-profile textarea.form-control {
+    height: 100px;
+    resize: none;
+}
+
+.instructor-profile .btn-outline-primary {
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+.instructor-profile .btn-outline-primary:hover {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.instructor-profile .btn-primary {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.instructor-profile .btn-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.instructor-profile .edit {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 59, 71, 0.40);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.instructor-profile .edit:hover {
+    opacity: 1;
+}
+
+.instructor-profile .edit-profile {
+    padding-bottom: 2rem;
+}
+
+.instructor-profile .change-password {
+    padding-bottom: 2rem;
+}
+
+.instructor-profile .edit-profile::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -1rem;
+    height: 1px;
+    background: #C4C4C4;
+    width: calc(100% + 2rem);
+}
+
+.instructor-profile main section.instructors-section i {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.instructor-profile main section.instructors-section .search {
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.instructor-profile main section.instructors-section .filters input.form-control {
+    display: flex;
+    height: 48px;
+    padding: 12px 162px 12px 48px;
+    align-items: center;
+    color: var(--Gray-500, #8C94A3);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #fff;
+    border: 1px solid var(--Gray-100, #E9EAF0);
+
+}
+
+.instructor-profile main section.instructors-section .cources {
+    width: 30%;
+}
+
+.instructor-profile main section.instructors-section .instructors {
+    width: 20%;
+}
+
+.instructor-profile main section.instructors-section .filters select.form-select {
+    display: flex;
+    height: 48px;
+    padding: 12px 16px 12px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 182px;
+    background-color: #fff;
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.instructor-profile .card h5.card-title {
+    color: var(--Gray-900, #1D2026);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.001px;
+    padding: 0;
+    margin: 0;
+}
+
+.instructor-profile .card p.card-text {
+    color: var(--Gray-500, #8C94A3);
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.501px;
+    letter-spacing: -0.12px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.instructor-profile main section.instructors-section .card .card-body i {
+    left: 10px;
+    bottom: 20px;
+}
+
+.instructor-profile main section.instructors-section .card .card-body::after {
+    bottom: 2.75rem;
+}
+
+/* Wishlist Section */
+
+.wishlist h5 {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.wishlist .table th {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+
+.wishlist thead tr {
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    background: var(--Gray-White, #FFF);
+}
+
+.wishlist .table>:not(:first-child) {
+    border-top: 0;
+}
+
+.wishlist .table td {
+    padding: 1.5rem 0.5rem;
+    vertical-align: middle;
+}
+
+.wishlist .course-rating {
+    color: var(--Gray-500, #8C94A3);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+    margin-bottom: 0.5rem;
+}
+
+.wishlist .course-rating span {
+    color: var(--Gray-900, #1D2026);
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+}
+
+.wishlist .course-title {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.wishlist .course-author {
+    color: var(--Gray-400, #A1A5B3);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.wishlist .course-author span {
+    color: var(--Gray-700, #4E5566);
+}
+
+.wishlist td.course-info {
+    max-width: 315px;
+    white-space: normal;
+}
+
+.wishlist .course-price {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.wishlist .discounted-price {
+    color: #4C75FA;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.wishlist .original-price {
+    text-decoration: line-through;
+    color: var(--Gray-500, #8C94A3);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.27px;
+}
+
+.wishlist .course-action .btn {
+    margin-right: 0.5rem;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.128px;
+    text-transform: capitalize;
+    background: rgba(76, 117, 250, 0.16);
+    border-radius: 0;
+    border: 0;
+}
+
+.wishlist .course-action .btn.buy {
+    color: #1D2026;
+    width: 115px;
+}
+
+.wishlist .course-action .btn.cart {
+    color: #FFF;
+    background: #4C75FA;
+    width: 115px;
+}
+
+.wishlist .course-action .btn.heart {
+    width: 44px;
+}
+
+.wishlist .course-action .fa-heart {
+    font-size: 1.1rem;
+}
+
+.payment-method form input.form-control {
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    background: var(--Gray-White, #FFF);
+    color: var(--Gray-500, #8C94A3);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.payment-method form input#cardNumber {
+    padding-left: 3rem;
+}
+
+.payment-method form input#saveCard {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    fill: #4C75FA;
+}
+
+.payment-method form i {
+    position: absolute;
+    color: rgba(76, 117, 250, 1);
+    padding-left: 10px;
+}
+
+.payment-options .card i {
+    color: rgba(255, 102, 54, 1);
+}
+
+i.fa-solid.fa-circle-check {
+    color: rgba(35, 189, 51, 1);
+}
+
+.payment-method form label.form-check-label {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.payment-method .card {
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    padding: 15px 20px;
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.payment-method .card.border-success {
+    border: 1px solid var(--Success-500, #23BD33) !important;
+}
+
+.payment-method .card .paypal {
+    color: var(--Gray-500, #8C94A3);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.payment-method h4 {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.payment-options img {
+    height: 24px;
+}
+
+.payment-method .course-summary .img-thumbnail {
+    width: 80px;
+    height: 80px;
+}
+
+/* .payment-method .order-summary {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+} */
+
+.payment-method .order-summary button {
+    background: #4C75FA;
+    color: var(--Gray-White, #FFF);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.18px;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 0;
+}
+
+.payment-method .cource {
+    max-width: 40.4%;
+    padding: 1rem;
+    border: 1px solid var(--Gray-100, #E9EAF0);
+    position: relative;
+}
+
+.payment-method .cource:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 21rem;
+    width: 100%;
+    height: 1px;
+    background: #E9EAF0;
+}
+
+.payment-method .cource:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 9rem;
+    width: 100%;
+    height: 1px;
+    background: #E9EAF0;
+}
+
+.payment-method .cource-summary p.tutor {
+    color: var(--Gray-400, #A1A5B3);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+p.name.mb-1 {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.order-summary span.subtotal {
+    color: var(--Gray-600, #6E7485);
+    text-align: right;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.order-summary span.price {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+}
+
+.order-summary strong.total {
+    color: var(--Gray-Scales-Black, #202029);
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.order-summary strong.total-price {
+    color: var(--Gray-Scales-Black, #202029);
+    text-align: right;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+
 /* Responsive */
 
 @media (min-width: 1025px) {
@@ -2878,6 +3456,33 @@ section.hero-section h5 {
     .instructor-profile .card-body {
         padding: .75rem .5rem;
     }
+
+    .instructor-profile main section.instructors-section .card .card-body i {
+        left: 8px;
+        bottom: 16px;
+    }
+
+    .wishlist td.course-info {
+        min-width: 450px;
+    }
+
+    .wishlist .course-action .btn.buy {
+        width: 80px;
+    }
+
+    .wishlist .course-action .btn.cart {
+        color: #FFF;
+        background: #4C75FA;
+        width: 100px;
+    }
+
+    .wishlist .course-action .btn {
+        font-size: 14px;
+    }
+
+    .wishlist .course-action .btn.heart {
+        width: 40px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -2917,6 +3522,12 @@ section.hero-section h5 {
         font-size: 11px;
     }
 
+    .wishlist td.course-action {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3135,6 +3746,87 @@ section.hero-section h5 {
     .login h1 {
         font-size: 37px;
     }
+
+    .instructor-profile main section.instructors-section .search {
+        width: 100%;
+    }
+
+    .instructor-profile main section.instructors-section .cources {
+        width: 100%;
+    }
+
+    .instructor-profile main section.instructors-section .instructors {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .instructors-section .filters {
+        flex-direction: column;
+    }
+
+    .payment-method .card {
+        font-size: 13px;
+    }
+
+    .instructor-profile .form-label {
+        font-size: 13px;
+    }
+
+    .payment-method form input.form-control {
+        font-size: 13px;
+    }
+
+    .payment-method form label.form-check-label {
+        font-size: 13px;
+    }
+
+    .payment-method .cource {
+        padding: 1rem .5em;
+    }
+
+    main .payment-method .course-summary img {
+        margin-right: 0.5rem !important;
+    }
+
+    .payment-method .cource:before {
+        top: 23rem;
+    }
+
+    .payment-method .cource:after {
+        bottom: 8rem;
+    }
+
+    .instructor-profile main p {
+        font-size: 10px;
+    }
+
+    .instructor-profile main p.name {
+        font-size: 12px;
+    }
+
+    .payment-method h4 {
+        font-size: 17px;
+    }
+
+    .order-summary span.subtotal {
+        font-size: 13px;
+    }
+
+    .order-summary span.price {
+        font-size: 13px;
+    }
+
+    .order-summary strong.total {
+        font-size: 15px;
+    }
+
+    .order-summary strong.total-price {
+        font-size: 20px;
+    }
+
+    .payment-method .order-summary button {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -3352,5 +4044,46 @@ section.hero-section h5 {
 
     .login .login-section .tab-content {
         padding: 2rem 1rem;
+    }
+
+    .instructor-profile button.cancel,
+    .instructor-profile button.submit {
+        padding: 12px 0;
+        width: 150px;
+        border-radius: 25px;
+        font-size: 13px;
+    }
+
+    .instructor-profile main section.instructors-section .filters input.form-control {
+        padding: 12px 8px 12px 48px;
+    }
+
+    .payment-method .card {
+        padding: 1rem .5rem;
+        font-size: 11px;
+    }
+
+    .payment-method .card .gap-5 {
+        gap: .5rem !important;
+    }
+
+    .payment-method form input.form-control {
+        font-size: 12px;
+    }
+
+    .payment-method form label.form-check-label {
+        font-size: 11px;
+    }
+
+    .payment-method .cource {
+        max-width: 99%;
+    }
+
+    .payment-method .cource:before {
+        top: 21.5rem;
+    }
+
+    .payment-method .cource:after {
+        bottom: 7.5rem;
     }
 }
