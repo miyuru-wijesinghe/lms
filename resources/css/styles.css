@@ -3399,6 +3399,181 @@ p.name.mb-1 {
     letter-spacing: -0.24px;
 }
 
+.purchase-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.purchase-summary .date-time {
+    font-weight: 500;
+    color: #0073e6;
+}
+
+.summary-info {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.course img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.course-info {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.course-price {
+    font-size: 1rem;
+    color: #0073e6;
+    font-weight: 500;
+}
+
+.payment-info {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* purchace history */
+
+.instructor-profile .purchace-history h3 {
+
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.instructor-profile .purchace-history .card-body::after {
+    display: none;
+}
+
+.instructor-profile main .purchace-history h5 {
+    color: #1D2026 !important;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.27px;
+}
+
+.instructor-profile main .purchace-history h5.price {
+    color: #4C75FA !important;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(-25%, 25%);
+}
+
+.instructor-profile main .purchace-history p {
+    color: #4E5566;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.instructor-profile main .purchace-history p.date {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.instructor-profile main .purchace-history p {
+    color: #4E5566;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.instructor-profile main .purchace-history p.title {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.instructor-profile main .purchace-history p.tutor {
+    color: #4E5566;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.instructor-profile main .purchace-history p.tutor span {
+    color: #A1A5B3;
+}
+
+.instructor-profile main .purchace-history i.fas.fa-credit-card {
+    color: rgba(35, 189, 51, 1) !important;
+}
+
+.instructor-profile main .purchace-history i {
+    color: rgba(86, 79, 253, 1) !important;
+    width: 20px;
+    height: 20px;
+}
+
+.instructor-profile main .purchace-history h6 {
+    color: #8C94A3;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.instructor-profile main .purchace-history h6 span {
+    color: #1D2026;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
 /* Responsive */
 
 @media (min-width: 1025px) {
@@ -3483,6 +3658,10 @@ p.name.mb-1 {
     .wishlist .course-action .btn.heart {
         width: 40px;
     }
+
+    .instructor-profile main .purchace-history p.date {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -3527,6 +3706,24 @@ p.name.mb-1 {
         gap: 1rem;
         flex-direction: column;
         align-items: center;
+    }
+
+    .instructor-profile main .purchace-history p.date {
+        font-size: 16px;
+    }
+
+    .instructor-profile main .card p {
+        font-size: 10px;
+    }
+
+    .instructor-profile main .purchace-history i {
+        width: 15px;
+    }
+
+    .instructor-profile main .purchace-history h5.price {
+        font-size: 18px;
+        top: auto;
+        transform: translate(0, 25%);
     }
 }
 
@@ -3827,6 +4024,16 @@ p.name.mb-1 {
     .payment-method .order-summary button {
         font-size: 16px;
     }
+
+    .instructor-profile main .purchace-history h5.price {
+        font-size: 14px;
+        top: auto;
+        transform: translate(0, 20%);
+    }
+
+    main.col-md-9.col-lg-9.p-3 {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -4085,5 +4292,26 @@ p.name.mb-1 {
 
     .payment-method .cource:after {
         bottom: 7.5rem;
+    }
+
+    .purchace-history .body-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .instructor-profile main .purchace-history h6 {
+        font-size: 12px;
+    }
+
+    .instructor-profile main .purchace-history p.title {
+        font-size: 15px;
+    }
+
+    .instructor-profile main .purchace-history p.tutor {
+        font-size: 13px;
+    }
+
+    .instructor-profile main .purchace-history p.date {
+        font-size: 14px;
     }
 }
