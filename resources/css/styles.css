@@ -2327,6 +2327,7 @@ section.hero-section h5 {
 .instructor-profile main {
     border-radius: 15px;
     background: #FFF;
+    position: relative;
 }
 
 .instructor-profile main h2 {
@@ -3573,6 +3574,596 @@ p.name.mb-1 {
     line-height: 20px;
 }
 
+/*  */
+
+.filter.cource-instructor form span {
+    bottom: 14px;
+    top: auto;
+}
+
+.cource-instructor select.form-select {
+    background-color: #ffffff;
+    width: 19vw;
+}
+
+.cource-instructor p.price {
+    margin: 0;
+}
+
+.cource-instructor .modal form input.form-control {
+    padding: 10px;
+}
+
+.filter.cource-instructor form input.form-control {
+    width: 31vw;
+    margin-bottom: 9px;
+}
+
+.cource-instructor form label,
+.cource-instructor span.me-2 {
+    color: var(--Gray-600, #6E7485);
+    font-family: Inter;
+    font-size: 11.7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.6px;
+}
+
+.cource-instructor ul {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.cource-instructor ul li a {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+    border: 0;
+    border-radius: 0;
+}
+
+.cource-instructor ul li a:hover {
+    color: var(--Gray-White, #FFF);
+    background: #4C75FA;
+}
+
+/* instructor cource details  */
+
+.cource-details.instructor {
+    background-color: transparent;
+}
+
+.cource-details.instructor .profile-card {
+    background: #fff;
+    width: 90%;
+    float: right;
+    position: relative;
+    padding: 70px 110px;
+}
+
+.cource-details.instructor .profile-card i {
+    width: 24px;
+    height: 24px;
+    font-size: 17px;
+}
+
+.cource-details.instructor .profile-card span.badge {
+    color: #4C75FA;
+    font-family: Inter;
+    font-size: 13.608px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.439px;
+    letter-spacing: -0.136px;
+    background: rgba(76, 117, 250, 0.16);
+    padding: 8px 12px;
+}
+
+.cource-details.instructor .profile-card strong.text-dark {
+    font-weight: 600;
+}
+
+.cource-details.instructor .profile-image {
+    position: absolute;
+    left: -8rem;
+}
+
+.cource-details.instructor h3 {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 31.103px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.879px;
+    letter-spacing: -0.311px;
+    padding: 0;
+}
+
+.cource-details.instructor aside::after {
+    display: none;
+}
+
+.cource-details.instructor h6 {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 17.495px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.cource-details.instructor aside p {
+    color: #6E7485;
+    font-family: Inter;
+    font-size: 13.608px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.383px;
+    letter-spacing: -0.136px;
+}
+
+.cource-details.instructor .nav-item {
+    flex: none;
+}
+
+.cource-details.instructor .nav-tabs .nav-link {
+    color: #1D2026;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15.552px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.383px;
+    padding: 15px 60px;
+    border-radius: 0;
+    border: 0;
+}
+
+.cource-details.instructor .course-content ul li {
+    margin-bottom: 1px;
+}
+
+.cource-details.instructor .nav-tabs .nav-link.active {
+    border-bottom: 3px solid #FF6636;
+}
+
+.cource-details.instructor .tab-content h3 {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 23.327px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 31.103px;
+    letter-spacing: -0.233px;
+}
+
+.cource-details.instructor .category-badge {
+    display: flex;
+    padding: 3.909px 5.863px;
+    justify-content: center;
+    align-items: center;
+    gap: 9.772px;
+    font-family: Inter;
+    font-size: 11.772px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11.726px;
+    text-transform: uppercase;
+}
+
+.cource-details.instructor .category-badge.category-1 {
+    background: var(--Primary-100, #FFEEE8);
+    color: var(--Primary-700, #993D20);
+}
+
+.cource-details.instructor .category-badge.category-2 {
+    background: var(--Secondary-100, #EBEBFF);
+    color: var(--Secondary-700, #342F98);
+}
+
+.cource-details.instructor .category-badge.category-3 {
+    background: var(--Success-100, #E1F7E3);
+    color: var(--Success-700, #15711F);
+}
+
+.cource-details.instructor .card-body:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: #E9EAF0;
+    height: 1px;
+    bottom: 50px;
+    left: 0;
+}
+
+.cource-details.instructor .price-badge {
+    color: #4C75FA;
+    font-family: Inter;
+    font-size: 23.635px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.497px;
+}
+
+.cource-details.instructor h5 {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.16px;
+    padding: 12px 0;
+}
+
+.cource-details.instructor .rate {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 15.68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.543px;
+    letter-spacing: -0.137px;
+}
+
+.cource-details.instructor span i {
+    width: 15.635px;
+    height: 15.635px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(76, 117, 250, 1);
+}
+
+.cource-details.instructor .size {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 15.68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.543px;
+    letter-spacing: -0.137px;
+}
+
+.cource-details.instructor .student {
+    color: var(--Gray-500, #8C94A3);
+    font-family: Inter;
+    font-size: 15.68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.497px;
+    letter-spacing: -0.137px;
+}
+
+
+.cource-details.instructor .course-card {
+    display: flex;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 0;
+    min-height: 330px;
+}
+
+.cource-details.instructor .title h3 {
+    color: #1D2026;
+    font-family: Inter;
+    font-size: 23.327px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 31.103px;
+    letter-spacing: -0.233px;
+}
+
+.cource-details.instructor .feedback .rating i {
+    color: #4c75fa;
+}
+
+.cource-details.instructor .load-button a {
+    color: #4c75fa;
+    border: 1px solid #4c75fa;
+    background: rgb(255 255 255 / 79%);
+}
+
+/* edit instructor */
+
+.instructor-profile aside.instructor nav a {
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.instructor-profile .edit-profile.instructor::after {
+    display: none;
+}
+
+/* new cource instructor */
+
+.instructor-profile section.new-course button.btn {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.18px;
+    text-transform: capitalize;
+    background: #4C75FA;
+    border-radius: 55px;
+    display: inline-flex;
+    height: 44px;
+    padding: 0px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.instructor-profile section.new-course button.btn.btn-outline-primary {
+    background: #fff;
+    color: #4C75FA;
+}
+
+.instructor-profile section.new-course .preview-btn {
+    background: #fff !important;
+    color: #4C75FA;
+}
+
+.instructor-profile section.new-course input.form-control {
+    font-size: 15px;
+}
+
+.instructor-profile section.new-course .nav .nav-item .nav-link {
+    color: #6E7485;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 0;
+    padding: 15px;
+    border-top: 1px solid #E9EAF0;
+}
+
+.instructor-profile section.new-course .nav .nav-item .nav-link.active {
+    color: #4C75FA;
+    background: rgba(76, 117, 250, 0.16);
+    border-bottom: 3px solid #4C75FA;
+
+
+}
+
+.instructor-profile section.new-course small {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+
+.instructor-profile section.new-course .advance-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.instructor-profile section.new-course .chapter-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.instructor-profile section.new-course .chapter-thumbnail,
+.instructor-profile section.new-course .chapter-trailer,
+.instructor-profile section.new-course .chapter-description,
+.chapter-teach {
+    padding: 1rem;
+}
+
+.instructor-profile section.new-course .thumbnail-box,
+.instructor-profile section.new-course .trailer-box {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.instructor-profile section.new-course .icon-large {
+    font-size: 2rem;
+    color: #888;
+}
+
+.instructor-profile section.new-course .upload-btn {
+    color: #4C75FA;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.128px;
+    text-transform: capitalize;
+    background: #E2E9FE;
+    display: flex;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 0;
+    border: 0;
+    margin-top: 1rem;
+}
+
+.instructor-profile section.new-course .full-width {
+    width: 100%;
+}
+
+.instructor-profile section.new-course .chapter-description textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.instructor-profile section.new-course .formatting-tools button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: #555;
+}
+
+.instructor-profile section.new-course .chapter-teach .teach-input {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.instructor-profile section.new-course span.char-count {
+    position: absolute;
+    right: 12px;
+    top: 33px;
+}
+
+.instructor-profile section.new-course .add-new {
+    color: #ff5a5a;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.instructor-profile section.new-course #editor {
+    min-height: 200px;
+}
+
+.instructor-profile section.new-course #toolbar-container {
+    padding: 1rem;
+    display: flex;
+    gap: 5px;
+}
+
+.instructor-profile section.new-course #editor .ql-editor.ql-blank::before {
+    color: var(--Gray-500, #8C94A3);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.instructor-profile section.new-course .new.btn {
+    color: var(--Primary-500, #FF6636);
+    background: #fff;
+    font-size: 14px;
+    padding: 0;
+}
+
+.instructor-profile section.new-course .instructor-profile input.form-control,
+.instructor-profile section.new-course select.form-select,
+.instructor-profile section.new-course textarea.form-control {
+    font-size: 15px;
+}
+
+.instructor-profile section.new-course .item-counter {
+    margin-right: 0.5rem;
+    color: #555;
+}
+
+.instructor-profile section.new-course #previewModal div {
+    text-align: center;
+}
+
+.instructor-profile section.new-course #previewModal p {
+    text-align: left;
+}
+
+.instructor-profile section.new-course .curriculum-section {
+    background: #F5F7FA;
+}
+
+.instructor-profile section.new-course .lecture-item {
+    background: #fff;
+}
+
+section.new-course .lecture-item button.btn {
+    color: #4C75FA;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.056px;
+    text-transform: capitalize;
+    padding: 0px 16px;
+    background: #E2E9FE;
+    border: 0;
+    border-radius: 0;
+}
+
+.instructor-profile section.new-course .curriculum-section a i {
+    width: 29px;
+    height: 24px;
+    font-size: 19px;
+    color: rgba(140, 148, 163, 1);
+}
+
+.instructor-profile section.new-course button#addSectionBtn {
+    background: #E2E9FE;
+    color: #4C75FA;
+    font-size: 16px;
+    line-height: 48px;
+    letter-spacing: -0.128px;
+    border: 0;
+    border-radius: 0;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.instructor-profile section.new-course .footer-btns {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.instructor-profile section.new-course .btn-outline-secondary {
+    background: #E2E9FE !important;
+    color: #4C75FA;
+}
+
+.modal .modal-header h5 {
+    color: #161A1A;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.instructor-profile section.new-course .modal p strong {
+    color: #23BD33;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.modal .modal-footer {
+    justify-content: space-between;
+}
+
+.modal .modal-body input.form-control {
+    height: auto;
+    margin-top: .5rem;
+}
+
 
 /* Responsive */
 
@@ -3661,6 +4252,25 @@ p.name.mb-1 {
 
     .instructor-profile main .purchace-history p.date {
         font-size: 18px;
+    }
+
+    .instructor-profile section.new-course .form-label {
+        font-size: 13px;
+    }
+
+    .instructor-profile section.new-course .upload-btn {
+        font-size: 14px;
+        padding: 0px 8px;
+        gap: 6px;
+    }
+
+    .instructor-profile section.new-course .chapter-row img {
+        max-width: 160px;
+    }
+
+    .instructor-profile section.new-course .thumbnail-box,
+    .instructor-profile section.new-course .trailer-box {
+        flex-direction: column;
     }
 }
 
@@ -4034,6 +4644,30 @@ p.name.mb-1 {
     main.col-md-9.col-lg-9.p-3 {
         margin-top: 1rem;
     }
+
+    .filter.cource-instructor .sort select {
+        width: 18vw;
+    }
+
+    .filter.cource-instructor form input.form-control {
+        width: 23vw;
+    }
+
+    .cource-details.instructor .profile-image {
+        left: -5rem;
+    }
+
+    .cource-details.instructor aside {
+        margin-top: 0;
+    }
+
+    .cource-details.instructor .cource {
+        margin-top: 2rem;
+    }
+
+    .instructor-profile section.new-course .footer-btns {
+        position: relative;
+    }
 }
 
 @media (max-width: 767px) {
@@ -4313,5 +4947,100 @@ p.name.mb-1 {
 
     .instructor-profile main .purchace-history p.date {
         font-size: 14px;
+    }
+
+    .filter.cource-instructor .sort select {
+        font-size: 14px;
+        width: 80vw;
+    }
+
+    .filter.cource-instructor form input.form-control {
+        font-size: 14px;
+        width: 80vw;
+    }
+
+    .cource-details.instructor .profile-card {
+        width: 100%;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .cource-details.instructor .profile-image {
+        position: relative;
+        left: 0;
+        padding-bottom: 10px;
+    }
+
+    .cource-details.instructor h3 {
+        font-size: 17px;
+    }
+
+    .cource-details.instructor .profile-card span.badge {
+        font-size: 12px;
+    }
+
+    .cource-details.instructor .profile-card .ms-4 {
+        margin: 0 !important;
+    }
+
+    .cource-details.instructor .profile-card span.me-3 {
+        margin: 0.25rem !important;
+    }
+
+    .cource-details.instructor .d-flex.align-items-center.text-secondary {
+        flex-direction: column;
+    }
+
+    .cource-details.instructor .nav-tabs .nav-link {
+        padding: 10px 30px;
+    }
+
+    .cource-details.instructor .cource .container {
+        padding: 0;
+    }
+
+    .cource-details.instructor .students-feedback .title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cource-details.instructor .students-feedback {
+        padding: 20px 0;
+        border-radius: 8px;
+    }
+
+    .instructor-profile .wrapper {
+        flex-direction: column;
+    }
+
+    .instructor-profile .title-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .instructor-profile section.new-course button.btn {
+        padding: 0px 20px;
+        font-size: 14px;
+        height: 34px;
+    }
+
+    .instructor-profile section.new-course .chapter-row {
+        grid-template-columns: 1fr;
+    }
+
+    .instructor-profile section.new-course .section-item {
+        flex-direction: column;
+    }
+
+    .instructor-profile section.new-course .lecture-item {
+        flex-direction: column;
+    }
+
+    .instructor-profile section.new-course .footer-btns {
+        padding: 0;
+    }
+
+    .modal-body .d-flex.align-items-center {
+        flex-direction: column;
     }
 }
