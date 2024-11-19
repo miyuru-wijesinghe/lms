@@ -30,11 +30,9 @@
         <!-- Sidebar -->
         <nav class="col-md-2 d-md-block bg-dark sidebar">
             <div class="d-flex flex-column h-100">
-                <!-- Logo Section -->
                 <div class="text-center my-4">
                     <img src="./resources/images/logo-2.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
                 </div>
-                <!-- Navigation Links -->
                 <ul class="nav flex-column flex-grow-1">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">
@@ -57,7 +55,6 @@
                         </a>
                     </li>
                 </ul>
-                <!-- Sign-out Button at the Bottom -->
                 <ul class="nav flex-column">
                     <li class="nav-item mt-auto">
                         <a class="nav-link text-white" href="#">
@@ -72,29 +69,31 @@
         <div class="main-content">
             <header class="d-flex justify-content-between align-items-center">
                 <div class="greeting">
-                <h5>All Course</h5>
+                    <h5>All Course</h5>
                 </div>
                 <div class="d-flex align-items-center notify">
-                    <button class="btn btn-light position-relative me-3" id="notificationIcon" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fa-regular fa-bell"></i>
-                      <span class="notification-dot"></span>
+                    <button class="btn btn-light position-relative me-3" id="notificationIcon" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationIcon">
-                      <li><a class="dropdown-item" href="#">Notification 1</a></li>
-                      <li><a class="dropdown-item" href="#">Notification 2</a></li>
-                      <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                        <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                        <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                        <li><a class="dropdown-item" href="#">Notification 3</a></li>
                     </ul>
-            
+
                     <div class="dropdown">
-                      <button class="btn" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./resources/images/profile.png" alt="Profile" class="rounded-circle" height="42">
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                        <li><a class="dropdown-item" href="#">Profile Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                      </ul>
+                        <button class="btn" type="button" id="profileDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./resources/images/profile.png" alt="Profile" class="rounded-circle" height="42">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
                     </div>
-                  </div>
+                </div>
             </header>
             <section class="col-md-12 col-lg-12 cource-cards">
 
@@ -125,8 +124,9 @@
                                         <i class="fa-solid fa-ellipsis"></i>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#viewDetailsModal">View Details</a></li>
+                                        <!-- <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#viewDetailsModal">View Details</a></li> -->
+                                        <li><a class="dropdown-item" href="#">View Details</a></li>
                                         <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                                 data-bs-target="#editCourseModal">Edit Course</a></li>
                                         <li><a class="dropdown-item text-danger" href="#" data-bs-toggle="modal"
@@ -801,7 +801,7 @@
                     </div>
 
                     <!-- View Details Modal -->
-                    <div class="modal fade" id="viewDetailsModal" tabindex="-1" aria-labelledby="viewDetailsModalLabel"
+                    <!-- <div class="modal fade" id="viewDetailsModal" tabindex="-1" aria-labelledby="viewDetailsModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -835,7 +835,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Edit Course Modal -->
