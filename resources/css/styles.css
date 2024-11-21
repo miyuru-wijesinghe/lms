@@ -914,7 +914,7 @@ footer nav ul li {
     font-style: normal;
     font-weight: 400;
     line-height: 23.4px;
-    /* 150% */
+    background-color: #fff;
 }
 
 .filter .suggest {
@@ -1502,6 +1502,12 @@ li:has(input[type="checkbox"]:checked) {
     padding: 0px 16px;
 }
 
+.cource-details button.btn.btn-outline-secondary:hover {
+    color: #fff;
+    background:#4E5566;
+}
+
+
 .cource-details .price h6 span {
     color: var(--Gray-900, #1D2026);
     font-family: Inter;
@@ -1580,6 +1586,17 @@ li:has(input[type="checkbox"]:checked) {
     background: rgba(76, 117, 250, 0.16);
 }
 
+.cource-details aside .cart:hover {
+    background: #8C94A3;
+    color: #fff;
+}
+
+.cource-details aside .buy:hover {
+    background: #8C94A3;
+    color: #fff;
+}
+
+
 .cource-details aside .text-muted {
     color: var(--Gray-500, #8C94A3);
     font-family: Inter;
@@ -1653,6 +1670,11 @@ li:has(input[type="checkbox"]:checked) {
     letter-spacing: -0.14px;
     text-decoration: none;
     margin-right: 3px;
+}
+
+.cource-details .share a:hover {
+    background: #4E5566;
+    color: #F5F7FA;
 }
 
 .cource-details .share h5 {
@@ -2036,6 +2058,11 @@ li:has(input[type="checkbox"]:checked) {
     gap: 12px;
     max-width: 170px;
     background: rgba(76, 117, 250, 0.79);
+}
+
+.cource-details .load-button a:hover {
+    color: rgba(76, 117, 250, 0.79);
+    background: #FFF;
 }
 
 .cource-details.container .course-content {
@@ -2614,7 +2641,7 @@ section.hero-section h5 {
     width: 100%;
     height: .5px;
     background-color: #E9EAF0;
-    bottom: 5.5rem;
+    bottom: 4.5rem;
     left: 0;
 }
 
@@ -2982,6 +3009,21 @@ textarea.form-control {
     border-color: #3b82f6;
 }
 
+.course-carousel .card-body a.btn-primary {
+    background-color: #f5f6ff;
+    color: #3b82f6;
+}
+
+.course-carousel .card-body a.btn-primary:hover {
+    background-color: #3b82f6;
+    color: #f5f6ff;
+}
+
+.course-carousel .card-body h5.card-title {
+    font-size: 14px !important;
+    text-align: left !important;
+}
+
 .instructor-profile .btn-primary:hover {
     background-color: #2563eb;
     border-color: #2563eb;
@@ -3087,9 +3129,11 @@ textarea.form-control {
     line-height: 18.001px;
     padding: 0;
     margin: 0;
+    margin-bottom: 1.5rem;
 }
 
 .instructor-profile .card p.card-text {
+    text-align: left !important;
     color: var(--Gray-500, #8C94A3);
     text-align: center;
     font-family: Inter;
@@ -3099,7 +3143,7 @@ textarea.form-control {
     line-height: 16.501px;
     letter-spacing: -0.12px;
     padding-top: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .instructor-profile main section.instructors-section .card .card-body i {
@@ -3190,7 +3234,7 @@ textarea.form-control {
 }
 
 .wishlist td.course-info {
-    max-width: 315px;
+    max-width: 340px;
     white-space: normal;
 }
 
@@ -3238,19 +3282,35 @@ textarea.form-control {
     width: 115px;
 }
 
+.wishlist .course-action .btn.buy:hover {
+    background: #1D2026;
+    color: #FFF;
+}
+
 .wishlist .course-action .btn.cart {
     color: #FFF;
     background: #4C75FA;
     width: 115px;
 }
 
+.wishlist .course-action .btn.cart:hover {
+    color: #4C75FA;
+    background: #E9EAF0;
+}
+
 .wishlist .course-action .btn.heart {
     width: 44px;
+}
+
+.wishlist .course-action .btn.heart:hover {
+    background: #ececec;
+
 }
 
 .wishlist .course-action .fa-heart {
     font-size: 1.1rem;
 }
+
 
 .payment-method form input.form-control {
     border: 1px solid var(--Gray-100, #E9EAF0);
@@ -3954,9 +4014,40 @@ p.name.mb-1 {
     flex-shrink: 0;
 }
 
+.instructor-profile section.new-course button.btn.btn-outline-secondary {
+    background: #fff !important;
+}
+
+.instructor-profile section.new-course button.btn.btn-outline-secondary:hover {
+    background: #4C75FA !important;
+    color: #fff;
+}
+
+
+.instructor-profile section.new-course button.btn.btn-outline-secondary.preview-btn {
+    background: #fff !important;
+}
+
+.instructor-profile section.new-course button.btn.btn-outline-secondary.preview-btn:hover {
+    background: #4C75FA !important;
+    color: #fff;
+
+}
+
+.instructor-profile section.new-course button.btn:hover {
+    background: #fff;
+    color: #4C75FA;
+
+}
+
 .instructor-profile section.new-course button.btn.btn-outline-primary {
     background: #fff;
     color: #4C75FA;
+}
+
+.instructor-profile section.new-course button.btn.btn-outline-primary:hover {
+    background: #4C75FA;
+    color: #fff;
 }
 
 .instructor-profile section.new-course .preview-btn {
@@ -4043,6 +4134,11 @@ p.name.mb-1 {
     border-radius: 0;
     border: 0;
     margin-top: 1rem;
+}
+
+.instructor-profile section.new-course .upload-btn:hover {
+    color: #E2E9FE;
+    background: #4C75FA;
 }
 
 .instructor-profile section.new-course .full-width {
@@ -4159,6 +4255,10 @@ section.new-course .lecture-item button.btn {
     color: rgba(140, 148, 163, 1);
 }
 
+.instructor-profile section.new-course .curriculum-section a i:hover {
+    color: #000;
+}
+
 .instructor-profile section.new-course button#addSectionBtn {
     background: #E2E9FE;
     color: #4C75FA;
@@ -4169,6 +4269,11 @@ section.new-course .lecture-item button.btn {
     border-radius: 0;
     margin: 1rem 0;
     width: 100%;
+}
+
+.instructor-profile section.new-course button#addSectionBtn:hover {
+    background: #4C75FA;
+    color: #E2E9FE;
 }
 
 .instructor-profile section.new-course .footer-btns {
