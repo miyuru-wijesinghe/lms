@@ -33,6 +33,7 @@ header nav {
     background: #1D2026;
     padding: 0 70px;
     transition: transform 0.3s ease-in-out;
+    z-index: 1001 !important;
 }
 
 header nav a {
@@ -55,6 +56,10 @@ header nav .phone-number {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.14px;
+}
+
+header nav .phone-number a {
+    text-decoration: none;
 }
 
 header .notification-dot {
@@ -414,6 +419,10 @@ header form input.form-control {
     min-height: 330px;
 }
 
+.best-selling-courses a {
+    text-decoration: none;
+}
+
 @media (min-width: 992px) {
     .col-lg-2-4 {
         flex: 0 0 20%;
@@ -462,6 +471,10 @@ header form input.form-control {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
+}
+
+.featured-courses-section a {
+    text-decoration: none;
 }
 
 .featured-courses-section .course-card {
@@ -1132,6 +1145,10 @@ input[type="checkbox"]:checked~.count {
     font-weight: 500;
     line-height: 19.5px;
     letter-spacing: -0.137px;
+}
+
+.filter .col a {
+    text-decoration: none;
 }
 
 .cource-cards .card {
@@ -2359,6 +2376,11 @@ section.hero-section h5 {
     padding: 10px 15px;
 }
 
+.contact-form textarea#message {
+    background-color: #fff;
+    font-size: 1rem;
+}
+
 .contact-form .form-control:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
@@ -2581,6 +2603,11 @@ section.hero-section h5 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.instructor-profile .contact p a {
+    color: #161A1A;
+    text-decoration: none;
 }
 
 .instructor-profile .contact p strong {
@@ -3022,6 +3049,7 @@ textarea.form-control {
 .course-carousel .card-body h5.card-title {
     font-size: 14px !important;
     text-align: left !important;
+    margin-bottom: 1.5rem !important;
 }
 
 .instructor-profile .btn-primary:hover {
@@ -3129,13 +3157,13 @@ textarea.form-control {
     line-height: 18.001px;
     padding: 0;
     margin: 0;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .instructor-profile .card p.card-text {
     text-align: left !important;
     color: var(--Gray-500, #8C94A3);
-    text-align: center;
+    text-align: center !important;
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
@@ -3143,7 +3171,7 @@ textarea.form-control {
     line-height: 16.501px;
     letter-spacing: -0.12px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 .instructor-profile main section.instructors-section .card .card-body i {
