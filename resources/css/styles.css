@@ -2653,6 +2653,10 @@ section.hero-section h5 {
     z-index: 2;
 }
 
+.instructor-profile a {
+    text-decoration: none;
+}
+
 .instructor-profile .card {
     border: none;
     border-radius: 0;
