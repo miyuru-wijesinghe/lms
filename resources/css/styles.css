@@ -3975,6 +3975,9 @@ p.name.mb-1 {
     letter-spacing: -0.137px;
 }
 
+.cource-details.instructor a {
+    text-decoration: none;
+}
 
 .cource-details.instructor .course-card {
     display: flex;
